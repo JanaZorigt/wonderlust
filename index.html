@@ -30,7 +30,6 @@
     <nav aria-label="Main Navigation">
         <input type="checkbox" id="dropdown">
         <label for="dropdown"><span></span></label>
-
         <ul>
             <li><a href="#" id="home">Wonderlust Travel</a></li>
             <li><a href="#">Destinations</a></li>
@@ -41,31 +40,31 @@
     </nav>
 
     <main id="main-content">
+
         <article>
 
-            <h2>Majorca</h2>
-
+            <!-- INTRO -->
             <section id="intro">
-                <h3>Introduction</h3>
-                <p>
-                    Imagine an island with turquoise waters, secret coves, golden sands, lush foliage,
-                    rugged mountains, picturesque villages and a vibrant capital city.
-                    Majorca is one of the most sought-after Mediterranean destinations.
-                </p>
-
-                <!-- Responsive Image (Art Direction) -->
-                <picture>
-                    <source media="(min-width:1280px)" srcset="images/majorca-beach-horizontal-l.jpg">
-                    <source media="(min-width:920px)" srcset="images/majorca-beach-vertical-m.jpg">
-                    <img src="images/majorca-beach-square-s.jpg"
-                        alt="Turquoise blue waters and sandy beach coastline in Majorca">
-                </picture>
-
-                <small>
-                    Photo by Charlie Firth on Unsplash
-                </small>
+                <div>
+                    <h3>Introduction</h3>
+                    <p>
+                        Imagine an island with turquoise waters, secret coves, golden sands, lush foliage,
+                        rugged mountains, picturesque villages and a vibrant capital city.
+                        Majorca is one of the most sought-after Mediterranean destinations.
+                    </p>
+                </div>
+                <div>
+                    <picture>
+                        <source media="(min-width:1280px)" srcset="images/majorca-beach-horizontal-l.jpg">
+                        <source media="(min-width:920px)" srcset="images/majorca-beach-vertical-m.jpg">
+                        <img src="images/majorca-beach-square-s.jpg"
+                            alt="Turquoise blue waters and sandy beach coastline in Majorca">
+                    </picture>
+                    <small>Photo by Charlie Firth on Unsplash</small>
+                </div>
             </section>
 
+            <!-- PLAN YOUR TRIP -->
             <section id="plan-your-trip">
                 <h3>Plan Your Trip</h3>
 
@@ -90,70 +89,71 @@
                 </section>
             </section>
 
+            <!-- TESTIMONIALS -->
             <section id="testimonials">
                 <h3>Testimonials</h3>
 
                 <section>
                     <h4>Miranda Blake</h4>
-                    <img src="images/miranda-blake-S.png" srcset="
-                images/miranda-blake-S.png 404w,
-                images/miranda-blake-M.png 920w,
-                images/miranda-blake-L.png 1280w" sizes="(min-width:1280px) 300px,
-                   (min-width:920px) 200px,
-                   150px" alt="Portrait of Miranda Blake">
-                    <dl>
-                        <dt>Traveling From:</dt>
-                        <dd>London, England</dd>
-                    </dl>
-                    <p>"I traveled here for business, but my stay was extended. Now it is my home."</p>
+                    <img src="images/miranda-blake-S.png"
+                        srcset="images/miranda-blake-S.png 404w, images/miranda-blake-M.png 920w, images/miranda-blake-L.png 1280w"
+                        sizes="(min-width:1280px) 300px, (min-width:920px) 200px, 150px"
+                        alt="Portrait of Miranda Blake">
+                    <div>
+                        <dl>
+                            <dt>Traveling From:</dt>
+                            <dd>London, England</dd>
+                        </dl>
+                        <q>I traveled here for business, but my stay was extended. Now it is my home.</q>
+                    </div>
                 </section>
 
                 <section>
                     <h4>Max Winter</h4>
-                    <img src="images/max-winter-S.png" srcset="
-                images/max-winter-S.png 404w,
-                images/max-winter-M.png 920w,
-                images/max-winter-L.png 1280w" sizes="(min-width:1280px) 300px,
-                   (min-width:920px) 200px,
-                   150px" alt="Portrait of Max Winter">
-                    <dl>
-                        <dt>Traveling From:</dt>
-                        <dd>Berlin, Germany</dd>
-                    </dl>
-                    <p>"Great escape from my reality. Beautiful sunsets, wonderful people, great beer."</p>
+                    <img src="images/max-winter-S.png"
+                        srcset="images/max-winter-S.png 404w, images/max-winter-M.png 920w, images/max-winter-L.png 1280w"
+                        sizes="(min-width:1280px) 300px, (min-width:920px) 200px, 150px" alt="Portrait of Max Winter">
+                    <div>
+                        <dl>
+                            <dt>Traveling From:</dt>
+                            <dd>Berlin, Germany</dd>
+                        </dl>
+                        <q>Great escape from my reality. Beautiful sunsets, wonderful people, great beer.</q>
+                    </div>
                 </section>
 
                 <section>
                     <h4>Inés Villegoes</h4>
-                    <img src="images/ines-villegoes-S.png" srcset="
-                images/ines-villegoes-S.png 404w,
-                images/ines-villegoes-M.png 920w,
-                images/ines-villegoes-L.png 1280w" sizes="(min-width:1280px) 300px,
-                   (min-width:920px) 200px,
-                   150px" alt="Portrait of Inés Villegoes">
-                    <dl>
-                        <dt>Traveling From:</dt>
-                        <dd>Barcelona, Spain</dd>
-                    </dl>
-                    <p>"A very safe environment for all travelers."</p>
+                    <img src="images/ines-villegoes-S.png"
+                        srcset="images/ines-villegoes-S.png 404w, images/ines-villegoes-M.png 920w, images/ines-villegoes-L.png 1280w"
+                        sizes="(min-width:1280px) 300px, (min-width:920px) 200px, 150px"
+                        alt="Portrait of Inés Villegoes">
+                    <div>
+                        <dl>
+                            <dt>Traveling From:</dt>
+                            <dd>Barcelona, Spain</dd>
+                        </dl>
+                        <q>A very safe environment for all travelers.</q>
+                    </div>
                 </section>
 
                 <section>
                     <h4>Carmen Lorenzo</h4>
-                    <img src="images/carmen-lorenzo-S.png" srcset="
-                images/carmen-lorenzo-S.png 404w,
-                images/carmen-lorenzo-M.png 920w,
-                images/carmen-lorenzo-L.png 1280w" sizes="(min-width:1280px) 300px,
-                   (min-width:920px) 200px,
-                   150px" alt="Portrait of Carmen Lorenzo">
-                    <dl>
-                        <dt>Traveling From:</dt>
-                        <dd>Madrid, Spain</dd>
-                    </dl>
-                    <p>"Live, laugh, love — everything you need in Majorca."</p>
+                    <img src="images/carmen-lorenzo-S.png"
+                        srcset="images/carmen-lorenzo-S.png 404w, images/carmen-lorenzo-M.png 920w, images/carmen-lorenzo-L.png 1280w"
+                        sizes="(min-width:1280px) 300px, (min-width:920px) 200px, 150px"
+                        alt="Portrait of Carmen Lorenzo">
+                    <div>
+                        <dl>
+                            <dt>Traveling From:</dt>
+                            <dd>Madrid, Spain</dd>
+                        </dl>
+                        <q>Live, laugh, love — everything you need in Majorca.</q>
+                    </div>
                 </section>
             </section>
 
+            <!-- ABOUT YOUR DESTINATION -->
             <section id="about-your-destination">
                 <h3>About Your Destination</h3>
 
@@ -181,13 +181,11 @@
         </article>
     </main>
 
+    <!-- FOOTER / CONTACT FORM -->
     <footer>
-
         <section id="contact-us">
             <h2>Contact Us <span id="required">(*required)</span></h2>
-
             <form action="#" method="post">
-
                 <label for="first-name">First Name*</label>
                 <input id="first-name" name="first-name" type="text" required>
 
@@ -200,17 +198,18 @@
                 <label for="phone">Phone*</label>
                 <input id="phone" name="phone" type="tel" required>
 
-                <fieldset>
+                <fieldset id="preferred-contact">
                     <legend>Preferred Contact Method*</legend>
+                    <div>
+                        <input type="radio" id="contact-email" name="preferred-contact" value="email" required>
+                        <label for="contact-email">Email</label>
 
-                    <input type="radio" id="contact-email" name="preferred-contact" value="email" required>
-                    <label for="contact-email">Email</label>
+                        <input type="radio" id="contact-text" name="preferred-contact" value="text">
+                        <label for="contact-text">Text</label>
 
-                    <input type="radio" id="contact-text" name="preferred-contact" value="text">
-                    <label for="contact-text">Text</label>
-
-                    <input type="radio" id="contact-phone" name="preferred-contact" value="phone">
-                    <label for="contact-phone">Phone</label>
+                        <input type="radio" id="contact-phone" name="preferred-contact" value="phone">
+                        <label for="contact-phone">Phone</label>
+                    </div>
                 </fieldset>
 
                 <label for="destination">Destination*</label>
@@ -247,7 +246,6 @@
             <a href="#">Privacy Statement</a>
             <a href="#">Terms of Service</a>
         </section>
-
     </footer>
 
 </body>
