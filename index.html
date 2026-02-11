@@ -59,30 +59,34 @@
             <section id="intro" aria-labelledby="intro-heading">
                 <h3 id="intro-heading" class="sr-only">Introduction</h3>
 
-                <p>
-                    Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage,
-                    rugged mountains, picturesque villages and a vibrant capital city.
-                    The island and its capital, Palma, are overflowing with character, while its beaches are famous all
-                    around the world, making it one of the most sought-after summer destinations.
-                </p>
+                <div style="grid-column: 1 / -1;">
+                    <p>
+                        Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green
+                        foliage,
+                        rugged mountains, picturesque villages and a vibrant capital city.
+                        The island and its capital, Palma, are overflowing with character, while its beaches are famous
+                        all
+                        around the world, making it one of the most sought-after summer destinations.
+                    </p>
 
-                <picture>
-                    <source media="(max-width: 404px)" srcset="images/majorca-beach-square-s.jpg">
-                    <source media="(max-width: 920px)" srcset="images/majorca-beach-vertical-m.jpg">
-                    <source media="(min-width: 921px)" srcset="images/majorca-beach-horizontal-l.jpg">
-                    <img src="images/majorca-beach-horizontal-l.jpg"
-                        alt="Waves crashing on a Majorca shoreline at sunset.">
-                </picture>
+                    <picture>
+                        <source media="(max-width: 404px)" srcset="images/majorca-beach-square-s.jpg">
+                        <source media="(max-width: 920px)" srcset="images/majorca-beach-vertical-m.jpg">
+                        <source media="(min-width: 921px)" srcset="images/majorca-beach-horizontal-l.jpg">
+                        <img src="images/majorca-beach-horizontal-l.jpg"
+                            alt="Waves crashing on a Majorca shoreline at sunset.">
+                    </picture>
 
-                <small>
-                    Photo by
-                    <a
-                        href="https://unsplash.com/@charliefirth?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Charlie
-                        Firth</a>
-                    on
-                    <a
-                        href="https://unsplash.com/photos/sea-waves-crashing-on-shore-during-sunset-HQJIQjXq1HI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-                </small>
+                    <small>
+                        Photo by
+                        <a
+                            href="https://unsplash.com/@charliefirth?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Charlie
+                            Firth</a>
+                        on
+                        <a
+                            href="https://unsplash.com/photos/sea-waves-crashing-on-shore-during-sunset-HQJIQjXq1HI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                    </small>
+                </div>
             </section>
 
             <section id="plan-your-trip" aria-labelledby="plan-heading">
@@ -279,78 +283,78 @@
         <section id="contact-us" aria-labelledby="contact-heading">
             <h2 id="contact-heading">Contact Us <span id="required">(*required)</span></h2>
 
-            <form action="#" method="post">
+            <div>
+                <label for="first-name">First Name <span aria-hidden="true">*</span></label>
+                <input class="form-control" id="first-name" name="firstName" type="text" autocomplete="given-name"
+                    required>
+            </div>
+
+            <div>
+                <label for="last-name">Last Name <span aria-hidden="true">*</span></label>
+                <input class="form-control" id="last-name" name="lastName" type="text" autocomplete="family-name"
+                    required>
+            </div>
+
+            <div>
+                <label for="email">Email <span aria-hidden="true">*</span></label>
+                <input class="form-control" id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone <span aria-hidden="true">*</span></label>
+                <input class="form-control" id="phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+
+            <fieldset id="preferred-contact">
+                <legend>Preferred Contact Method <span aria-hidden="true">*</span></legend>
+
                 <div>
-                    <label for="first-name">First Name <span aria-hidden="true">*</span></label>
-                    <input id="first-name" name="firstName" type="text" autocomplete="given-name" required>
+                    <input id="pref-email" type="radio" name="preferredContact" value="email" required>
+                    <label for="pref-email">Email</label>
                 </div>
 
                 <div>
-                    <label for="last-name">Last Name <span aria-hidden="true">*</span></label>
-                    <input id="last-name" name="lastName" type="text" autocomplete="family-name" required>
+                    <input id="pref-text" type="radio" name="preferredContact" value="text" required>
+                    <label for="pref-text">Text</label>
                 </div>
 
                 <div>
-                    <label for="email">Email <span aria-hidden="true">*</span></label>
-                    <input id="email" name="email" type="email" autocomplete="email" required>
+                    <input id="pref-phone" type="radio" name="preferredContact" value="phone" required>
+                    <label for="pref-phone">Phone</label>
                 </div>
+            </fieldset>
 
-                <div>
-                    <label for="phone">Phone <span aria-hidden="true">*</span></label>
-                    <input id="phone" name="phone" type="tel" autocomplete="tel" required>
-                </div>
+            <fieldset id="destination">
+                <legend>Destination <span aria-hidden="true">*</span></legend>
+                <label for="select-destination" class="sr-only">Choose a destination</label>
+                <select class="form-control" id="select-destination" name="destination" required>
+                    <option value="" selected disabled>Choose</option>
+                    <option value="barcelona">Barcelona</option>
+                    <option value="granada">Granada</option>
+                    <option value="ibiza">Ibiza</option>
+                    <option value="madrid">Madrid</option>
+                    <option value="majorca">Majorca</option>
+                    <option value="seville">Seville</option>
+                    <option value="tenerife">Tenerife</option>
+                    <option value="valencia">Valencia</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
 
-                <fieldset id="preferred-contact">
-                    <legend>Preferred Contact Method <span aria-hidden="true">*</span></legend>
+            <fieldset id="travelTime">
+                <legend>Travel Time <span aria-hidden="true">*</span></legend>
+                <label for="select-travel-time" class="sr-only">Choose a travel time</label>
+                <select class="form-control" id="select-travel-time" name="travelTime" required>
+                    <option value="" selected disabled>Choose</option>
+                    <option value="fall">Fall</option>
+                    <option value="winter">Winter</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="flexible">Flexible</option>
+                </select>
+            </fieldset>
 
-                    <label class="form-control">
-                        <input type="radio" name="preferredContact" value="email" required>
-                        Email
-                    </label>
-
-                    <label class="form-control">
-                        <input type="radio" name="preferredContact" value="text" required>
-                        Text
-                    </label>
-
-                    <label class="form-control">
-                        <input type="radio" name="preferredContact" value="phone" required>
-                        Phone
-                    </label>
-                </fieldset>
-
-                <fieldset id="destination">
-                    <legend>Destination <span aria-hidden="true">*</span></legend>
-                    <label for="select-destination" class="sr-only">Choose a destination</label>
-                    <select id="select-destination" name="destination" required>
-                        <option value="" selected disabled>Choose</option>
-                        <option value="barcelona">Barcelona</option>
-                        <option value="granada">Granada</option>
-                        <option value="ibiza">Ibiza</option>
-                        <option value="madrid">Madrid</option>
-                        <option value="majorca">Majorca</option>
-                        <option value="seville">Seville</option>
-                        <option value="tenerife">Tenerife</option>
-                        <option value="valencia">Valencia</option>
-                        <option value="other">Other</option>
-                    </select>
-                </fieldset>
-
-                <fieldset id="travelTime">
-                    <legend>Travel Time <span aria-hidden="true">*</span></legend>
-                    <label for="select-travel-time" class="sr-only">Choose a travel time</label>
-                    <select id="select-travel-time" name="travelTime" required>
-                        <option value="" selected disabled>Choose</option>
-                        <option value="fall">Fall</option>
-                        <option value="winter">Winter</option>
-                        <option value="spring">Spring</option>
-                        <option value="summer">Summer</option>
-                        <option value="flexible">Flexible</option>
-                    </select>
-                </fieldset>
-
-                <input id="submit" type="submit" value="Submit">
-            </form>
+            <input id="submit" type="submit" value="Submit">
         </section>
 
         <section id="legal" aria-labelledby="legal-heading">
