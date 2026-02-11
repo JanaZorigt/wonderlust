@@ -96,11 +96,11 @@
                 <section>
                     <h4>Miranda Blake</h4>
                     <img src="images/miranda-blake-S.png" srcset="
-                        images/miranda-blake-S.png 404w,
-                        images/miranda-blake-M.png 920w,
-                        images/miranda-blake-L.png 1280w" sizes="(min-width:1280px) 300px,
-                        (min-width:920px) 200px,
-                        150px" alt="Portrait of Miranda Blake">
+                    images/miranda-blake-S.png 404w,
+                    images/miranda-blake-M.png 920w,
+                    images/miranda-blake-L.png 1280w" sizes="(min-width:1280px) 300px,
+                       (min-width:920px) 200px,
+                       150px" alt="Portrait of Miranda Blake">
                     <dl>
                         <dt>Traveling From:</dt>
                         <dd>London, England</dd>
@@ -111,11 +111,11 @@
                 <section>
                     <h4>Max Winter</h4>
                     <img src="images/max-winter-S.png" srcset="
-                        images/max-winter-S.png 404w,
-                        images/max-winter-M.png 920w,
-                        images/max-winter-L.png 1280w" sizes="(min-width:1280px) 300px,
-                        (min-width:920px) 200px,
-                        150px" alt="Portrait of Max Winter">
+                    images/max-winter-S.png 404w,
+                    images/max-winter-M.png 920w,
+                    images/max-winter-L.png 1280w" sizes="(min-width:1280px) 300px,
+                       (min-width:920px) 200px,
+                       150px" alt="Portrait of Max Winter">
                     <dl>
                         <dt>Traveling From:</dt>
                         <dd>Berlin, Germany</dd>
@@ -126,11 +126,11 @@
                 <section>
                     <h4>Inés Villegoes</h4>
                     <img src="images/ines-villegoes-S.png" srcset="
-                        images/ines-villegoes-S.png 404w,
-                        images/ines-villegoes-M.png 920w,
-                        images/ines-villegoes-L.png 1280w" sizes="(min-width:1280px) 300px,
-                        (min-width:920px) 200px,
-                        150px" alt="Portrait of Inés Villegoes">
+                    images/ines-villegoes-S.png 404w,
+                    images/ines-villegoes-M.png 920w,
+                    images/ines-villegoes-L.png 1280w" sizes="(min-width:1280px) 300px,
+                       (min-width:920px) 200px,
+                       150px" alt="Portrait of Inés Villegoes">
                     <dl>
                         <dt>Traveling From:</dt>
                         <dd>Barcelona, Spain</dd>
@@ -141,11 +141,11 @@
                 <section>
                     <h4>Carmen Lorenzo</h4>
                     <img src="images/carmen-lorenzo-S.png" srcset="
-                        images/carmen-lorenzo-S.png 404w,
-                        images/carmen-lorenzo-M.png 920w,
-                        images/carmen-lorenzo-L.png 1280w" sizes="(min-width:1280px) 300px,
-                        (min-width:920px) 200px,
-                        150px" alt="Portrait of Carmen Lorenzo">
+                    images/carmen-lorenzo-S.png 404w,
+                    images/carmen-lorenzo-M.png 920w,
+                    images/carmen-lorenzo-L.png 1280w" sizes="(min-width:1280px) 300px,
+                       (min-width:920px) 200px,
+                       150px" alt="Portrait of Carmen Lorenzo">
                     <dl>
                         <dt>Traveling From:</dt>
                         <dd>Madrid, Spain</dd>
@@ -178,65 +178,65 @@
                 </section>
             </section>
 
+            <section id="contact-us">
+                <h2>Contact Us <span id="required">(*required)</span></h2>
+
+                <label for="first-name">First Name*</label>
+                <input id="first-name" name="first-name" type="text" required class="form-control">
+
+                <label for="last-name">Last Name*</label>
+                <input id="last-name" name="last-name" type="text" required class="form-control">
+
+                <label for="email">Email*</label>
+                <input id="email" name="email" type="email" required class="form-control">
+
+                <label for="phone">Phone*</label>
+                <input id="phone" name="phone" type="tel" required class="form-control">
+
+                <fieldset>
+                    <legend>Preferred Contact Method*</legend>
+
+                    <input type="radio" id="contact-email" name="preferred-contact" value="email" required>
+                    <label for="contact-email">Email</label>
+
+                    <input type="radio" id="contact-text" name="preferred-contact" value="text">
+                    <label for="contact-text">Text</label>
+
+                    <input type="radio" id="contact-phone" name="preferred-contact" value="phone">
+                    <label for="contact-phone">Phone</label>
+                </fieldset>
+
+                <label for="destination">Destination*</label>
+                <select id="destination" name="destination" required class="form-control">
+                    <option value="">Choose</option>
+                    <option>Barcelona</option>
+                    <option>Granada</option>
+                    <option>Ibiza</option>
+                    <option>Madrid</option>
+                    <option>Majorca</option>
+                    <option>Seville</option>
+                    <option>Tenerife</option>
+                    <option>Valencia</option>
+                    <option>Other</option>
+                </select>
+
+                <label for="travel-time">Travel Time*</label>
+                <select id="travel-time" name="travel-time" required class="form-control">
+                    <option value="">Choose</option>
+                    <option>Fall</option>
+                    <option>Winter</option>
+                    <option>Spring</option>
+                    <option>Summer</option>
+                    <option>Flexible</option>
+                </select>
+
+                <input type="submit" id="submit" value="Submit">
+            </section>
+
         </article>
     </main>
 
     <footer>
-
-        <section id="contact-us">
-            <h2>Contact Us <span id="required">(*required)</span></h2>
-
-            <label for="first-name" class="form-control">First Name*</label>
-            <input id="first-name" name="first-name" type="text" required class="form-control">
-
-            <label for="last-name" class="form-control">Last Name*</label>
-            <input id="last-name" name="last-name" type="text" required class="form-control">
-
-            <label for="email" class="form-control">Email*</label>
-            <input id="email" name="email" type="email" required class="form-control">
-
-            <label for="phone" class="form-control">Phone*</label>
-            <input id="phone" name="phone" type="tel" required class="form-control">
-
-            <fieldset>
-                <legend>Preferred Contact Method*</legend>
-
-                <input type="radio" id="contact-email" name="preferred-contact" value="email" required>
-                <label for="contact-email">Email</label>
-
-                <input type="radio" id="contact-text" name="preferred-contact" value="text">
-                <label for="contact-text">Text</label>
-
-                <input type="radio" id="contact-phone" name="preferred-contact" value="phone">
-                <label for="contact-phone">Phone</label>
-            </fieldset>
-
-            <label for="destination" class="form-control">Destination*</label>
-            <select id="destination" name="destination" required class="form-control">
-                <option value="">Choose</option>
-                <option>Barcelona</option>
-                <option>Granada</option>
-                <option>Ibiza</option>
-                <option>Madrid</option>
-                <option>Majorca</option>
-                <option>Seville</option>
-                <option>Tenerife</option>
-                <option>Valencia</option>
-                <option>Other</option>
-            </select>
-
-            <label for="travel-time" class="form-control">Travel Time*</label>
-            <select id="travel-time" name="travel-time" required class="form-control">
-                <option value="">Choose</option>
-                <option>Fall</option>
-                <option>Winter</option>
-                <option>Spring</option>
-                <option>Summer</option>
-                <option>Flexible</option>
-            </select>
-
-            <input type="submit" id="submit" value="Submit">
-        </section>
 
         <section id="legal">
             <h2>Legal</h2>
