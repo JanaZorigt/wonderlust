@@ -5,13 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wonderlust Travel - Destination Majorca</title>
-
-    <!-- Connect the provided CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Skip links (CSS already provides .sr-only focus styling) -->
     <a class="sr-only" href="#main-content">Skip to main content</a>
     <a class="sr-only" href="#plan-your-trip">Skip to plan your trip</a>
     <a class="sr-only" href="#testimonials">Skip to testimonials</a>
@@ -48,9 +45,10 @@
         <h1>Destination Majorca</h1>
         <p>Let Wonderlust Travel help you plan the trip of your dreams!</p>
         <p>
-            Specializing in unforgettable experiences, we offer curated trips to the breathtaking island of Majorca,
-            a hidden gem in the Mediterranean. Whether you crave sun-drenched beaches, charming villages, or thrilling
-            outdoor adventures, our expert team will craft the perfect itinerary tailored just for you.
+            Specializing in unforgettable experiences, we offer curated trips to the breathtaking island of Majorca, a
+            hidden gem in the Mediterranean.
+            Whether you crave sun-drenched beaches, charming villages, or thrilling outdoor adventures, our expert team
+            will craft the perfect itinerary tailored just for you.
         </p>
     </header>
 
@@ -59,22 +57,15 @@
             <h2>Majorca</h2>
 
             <section id="intro" aria-labelledby="intro-heading">
-                <h3 id="intro-heading">Introduction</h3>
+                <h3 id="intro-heading" class="sr-only">Introduction</h3>
 
                 <p>
                     Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage,
-                    rugged mountains, picturesque villages and a vibrant capital city. The island and its capital,
-                    Palma, are overflowing with character, while its beaches are famous all around the world, making it
-                    one of the most sought-after summer destinations.
+                    rugged mountains, picturesque villages and a vibrant capital city.
+                    The island and its capital, Palma, are overflowing with character, while its beaches are famous all
+                    around the world, making it one of the most sought-after summer destinations.
                 </p>
 
-                <!-- Responsive Image for Art Direction
-          images/majorca-beach-square-s.jpg
-          images/majorca-beach-vertical-m.jpg
-          images/majorca-beach-horizontal-l.jpg
-
-          404px, 920px, 1280px
-        -->
                 <picture>
                     <source media="(max-width: 404px)" srcset="images/majorca-beach-square-s.jpg">
                     <source media="(max-width: 920px)" srcset="images/majorca-beach-vertical-m.jpg">
@@ -152,16 +143,10 @@
                 <h3 id="testimonials-heading">Testimonials</h3>
 
                 <section aria-labelledby="miranda">
-                    <!-- Responsive Image for resolution switching
-            images/miranda-blake-S.png 404w
-            images/miranda-blake-M.png 920w
-            images/miranda-blake-L.png 1280w
-          -->
                     <img src="images/miranda-blake-L.png"
                         srcset="images/miranda-blake-S.png 404w, images/miranda-blake-M.png 920w, images/miranda-blake-L.png 1280w"
                         sizes="(max-width: 404px) 404px, (max-width: 920px) 920px, 1280px"
                         alt="Portrait of traveler Miranda Blake.">
-
                     <div>
                         <h4 id="miranda">Miranda Blake</h4>
                         <dl>
@@ -173,16 +158,10 @@
                 </section>
 
                 <section aria-labelledby="max">
-                    <!-- Responsive Image for resolution switching
-            images/max-winter-S.png 404w
-            images/max-winter-M.png 920w
-            images/max-winter-L.png 1280w
-          -->
                     <img src="images/max-winter-L.png"
                         srcset="images/max-winter-S.png 404w, images/max-winter-M.png 920w, images/max-winter-L.png 1280w"
                         sizes="(max-width: 404px) 404px, (max-width: 920px) 920px, 1280px"
                         alt="Portrait of traveler Max Winter.">
-
                     <div>
                         <h4 id="max">Max Winter</h4>
                         <dl>
@@ -194,16 +173,10 @@
                 </section>
 
                 <section aria-labelledby="ines">
-                    <!-- Responsive Image for resolution switching
-            images/ines-villegoes-S.png 404w
-            images/ines-villegoes-M.png 920w
-            images/ines-villegoes-L.png 1280w
-          -->
                     <img src="images/ines-villegoes-L.png"
                         srcset="images/ines-villegoes-S.png 404w, images/ines-villegoes-M.png 920w, images/ines-villegoes-L.png 1280w"
                         sizes="(max-width: 404px) 404px, (max-width: 920px) 920px, 1280px"
                         alt="Portrait of traveler Inés Villegoes.">
-
                     <div>
                         <h4 id="ines">Inés Villegoes</h4>
                         <dl>
@@ -215,16 +188,10 @@
                 </section>
 
                 <section aria-labelledby="carmen">
-                    <!-- Responsive Image for resolution switching
-            images/carmen-lorenzo-S.png 404w
-            images/carmen-lorenzo-M.png 920w
-            images/carmen-lorenzo-L.png 1280w
-          -->
                     <img src="images/carmen-lorenzo-L.png"
                         srcset="images/carmen-lorenzo-S.png 404w, images/carmen-lorenzo-M.png 920w, images/carmen-lorenzo-L.png 1280w"
                         sizes="(max-width: 404px) 404px, (max-width: 920px) 920px, 1280px"
                         alt="Portrait of traveler Carmen Lorenzo.">
-
                     <div>
                         <h4 id="carmen">Carmen Lorenzo</h4>
                         <dl>
@@ -239,8 +206,8 @@
             <section id="about-your-destination" aria-labelledby="about-heading">
                 <h3 id="about-heading">About Your Destination</h3>
 
-                <section aria-labelledby="size">
-                    <h4 id="size">Size</h4>
+                <section>
+                    <h4>Size</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ruler-2" width="100"
                         height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none"
                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
@@ -257,8 +224,8 @@
                     </dl>
                 </section>
 
-                <section aria-labelledby="elevation">
-                    <h4 id="elevation">Elevation</h4>
+                <section>
+                    <h4>Elevation</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-top-bar"
                         width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none"
                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
@@ -273,8 +240,8 @@
                     </dl>
                 </section>
 
-                <section aria-labelledby="location">
-                    <h4 id="location">Location</h4>
+                <section>
+                    <h4>Location</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="100"
                         height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none"
                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
@@ -288,8 +255,8 @@
                     </dl>
                 </section>
 
-                <section aria-labelledby="population">
-                    <h4 id="population">Population</h4>
+                <section>
+                    <h4>Population</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="100"
                         height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none"
                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
